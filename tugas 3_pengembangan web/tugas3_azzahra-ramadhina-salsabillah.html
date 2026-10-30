@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immortals Delight Milk Tea Shop</title>
+<!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            letter-spacing: 3px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 20px auto;
+        }
+
+        .special-text {
+            color: #ffd166;
+        }
+
+        /* Internal CSS untuk judul form */
+        #order h2 {
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .form-intro {
+            text-align: center;
+            margin: 15px auto 30px;
+            max-width: 650px;
+        }
+    </style>
+</head>
+
+<body>
+      <!-- NAVBAR -->
+    <header>
+        <a href="#home" class="logo">
+        <img src="myimages_4/bubble-tea-logo.jpg.jpeg" 
+        alt="Immortals Delight Logo">
+        <span>Immortals Delight</span>
+    </a>
+</nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <p class="subtitle">✦ ASTRAL FLAVOR HAS ARRIVED ✦</p>
+
+            <h1>Immortals Delight</h1>
+            <h2>Milk Tea Shop</h2>
+
+            <p class="hero-description">
+                Embark on a delicious journey across the stars
+                with our special bubble tea collection inspired
+                by the worlds of Honkai: Star Rail.
+            </p>
+
+            <p class="special-text">
+                "Every sip is a journey among the stars."
+            </p>
+
+            <a href="#menu" class="button">Explore Our Menu</a>
+
+            <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+
+        <h2 class="section-title">✦ Our Five Stars Menu ✦</h2>
+
+        <p class="section-description">
+            Discover your favorite drink among the stars!
+        </p>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="myimages_4/strawberry-boba.jpg"
+                     alt="Planarcadia Milky Strawberry">
+
+                <h3>Planarcadia Milky Strawberry</h3>
+                <p>Strawberry milk tea with chewy tapioca pearls.</p>
+                <span class="price">Rp 22.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="myimages_4/milk-green-tea.jpg"
+                     alt="Xianzhou Green Tea Latte">
+
+                <h3>Xianzhou Green Tea Latte</h3>
+                <p>Creamy matcha milk tea inspired by Xianzhou.</p>
+                <span class="price">Rp 24.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="myimages_4/peach-tea.jpg"
+                     alt="Astral Peach Tea">
+
+                <h3>Astral Peach Tea</h3>
+                <p>Refreshing peach tea with crystal boba pearls.</p>
+                <span class="price">Rp 21.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="myimages_4/taro-milk-tea.jpg"
+                     alt="Dreamy Taro Pearl">
+
+                <h3>Dreamy Taro Pearl</h3>
+                <p>Taro pearl milk tea inspired by The Dreamscapes.</p>
+                <span class="price">Rp 23.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="myimages_4/iced-coffee.jpg"
+                     alt="Belobog Iced Coffee">
+
+                <h3>Belobog Iced Coffee</h3>
+                <p>Delicious iced coffee inspired by the Snowland.</p>
+                <span class="price">Rp 24.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="myimages_4/brown-sugar-milk-tea.jpg"
+                     alt="Immortals Delight Signature">
+
+                <h3>Immortals Delight Signature</h3>
+                <p>A famous brown sugar milk tea from Luofu.</p>
+                <span class="price">Rp 26.000</span>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- ORDER FORM -->
+    <section id="order" class="order-section">
+
+        <h2>✦ Place Your Order ✦</h2>
+
+        <p class="form-intro">
+            Choose your favorite galactic drink and customize
+            your bubble tea before placing your order.
+        </p>
+
+        <form class="order-form"
+              action="#"
+              method="get"
+              onsubmit="return prepareOrder()">
+
+            <div class="form-group">
+                <label for="customer-name">Nama Pemesan</label>
+
+                <input type="text"
+                       id="customer-name"
+                       name="customer_name"
+                       placeholder="Masukkan nama kamu"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">Nomor WhatsApp</label>
+
+                <input type="tel"
+                       id="whatsapp"
+                       name="whatsapp"
+                       placeholder="Contoh: 081234567890"
+                       pattern="[0-9+() -]{9,20}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Pilih Minuman</label>
+
+                <select id="product" name="product" required>
+                    <option value="">-- Pilih Menu --</option>
+                    <option value="Planarcadia Milky Strawberry" data-price="22000">
+                        Planarcadia Milky Strawberry - Rp 22.000
+                    </option>
+                    <option value="Xianzhou Green Tea Latte" data-price="24000">
+                        Xianzhou Green Tea Latte - Rp 24.000
+                    </option>
+                    <option value="Astral Peach Tea" data-price="21000">
+                        Astral Peach Tea - Rp 21.000
+                    </option>
+                    <option value="Dreamy Taro Pearl" data-price="23000">
+                        Dreamy Taro Pearl - Rp 23.000
+                    </option>
+                    <option value="Belobog Iced Coffee" data-price="24000">
+                        Belobog Iced Coffee - Rp 24.000
+                    </option>
+                    <option value="Immortals Delight Signature" data-price="26000">
+                        Immortals Delight Signature - Rp 26.000
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="size">Ukuran</label>
+
+                    <select id="size" name="size" required>
+                        <option value="Regular">Regular</option>
+                        <option value="Large">Large (+Rp 5.000)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sugar">Level Gula</label>
+
+                    <select id="sugar" name="sugar" required>
+                        <option value="0%">0%</option>
+                        <option value="25%">25%</option>
+                        <option value="50%" selected>50%</option>
+                        <option value="75%">75%</option>
+                        <option value="100%">100%</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Jumlah Pesanan</label>
+
+                <input type="number"
+                       id="quantity"
+                       name="quantity"
+                       min="1"
+                       max="50"
+                       value="1"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Catatan Tambahan</label>
+
+                <textarea id="notes"
+                          name="notes"
+                          rows="4"
+                          placeholder="Contoh: less ice, extra pearls, dll."></textarea>
+            </div>
+
+            <div class="order-total">
+                <span>Estimasi Total:</span>
+                <strong id="total-price">Rp 22.000</strong>
+            </div>
+
+            <button type="submit" class="button order-button">
+                Buat Pesanan
+            </button>
+
+        </form>
+
+    </section>
+
+ <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+            <h2>About Immortals Delight</h2>
+
+            <p>
+                Immortals Delight Milk Tea Shop is a fan-made bubble
+                tea concept inspired by the fascinating worlds and
+                adventures of Honkai: Star Rail.
+            </p>
+
+            <p>
+                Our mission is simple: bring a little taste of the
+                stars into every cup. Find your favorite drink and
+                begin your own flavorful journey!
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- LOCATION AND FOOTER -->
+    <footer id="location" class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>✦ Immortals Delight</h3>
+
+                <p>
+                    Every sip is a journey among the stars.
+                </p>
+
+                <p>
+                    A fan-made Honkai: Star Rail inspired milk tea shop.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Lokasi Kami</h3>
+
+                <!-- Ganti dengan alamat toko yang sebenarnya -->
+                <p>📍 Alamat: [Jalan Asri, No. 35 RT001/007 Halim P.K]</p>
+
+                <p>🕒 Jam Operasional: [09.00-22.00 WIB]</p>
+
+                <a href="https://share.google/WJ4MX8xlib3EI2OMx"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Lihat Google Maps
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Hubungi Kami</h3>
+
+                <p>📧 Email: immortalsdelight@example.com</p>
+
+                <p>📱 Instagram: @immortalsdelight</p>
+
+                <p>💬 WhatsApp: [087812345678]</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Immortals Delight Milk Tea Shop.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript untuk estimasi harga dan simulasi pesanan -->
+    <script>
+        const productSelect = document.getElementById("product");
+        const sizeSelect = document.getElementById("size");
+        const quantityInput = document.getElementById("quantity");
+        const totalPrice = document.getElementById("total-price");
+
+        function calculateTotal() {
+            const selectedOption =
+                productSelect.options[productSelect.selectedIndex];
+
+            const price = Number(selectedOption.dataset.price || 0);
+            const sizeExtra = sizeSelect.value === "Large" ? 5000 : 0;
+            const quantity = Number(quantityInput.value) || 1;
+
+            const total = (price + sizeExtra) * quantity;
+
+            totalPrice.textContent = total.toLocaleString("id-ID", {
+                style: "currency",
+                currency: "IDR",
+                maximumFractionDigits: 0
+            });
+        }
+
+        productSelect.addEventListener("change", calculateTotal);
+        sizeSelect.addEventListener("change", calculateTotal);
+        quantityInput.addEventListener("input", calculateTotal);
+
+        function prepareOrder() {
+            const name =
+                document.getElementById("customer-name").value.trim();
+
+            const product = productSelect.value;
+
+            if (!name || !product) {
+                alert("Mohon lengkapi nama dan pilihan minuman.");
+                return false;
+            }
+
+            alert(
+                "Terima kasih, " + name +
+                "! Form pesanan berhasil diuji.\n\n" +
+                "Produk: " + product +
+                "\nEstimasi total: " + totalPrice.textContent +
+                "\n\nIni masih simulasi dan belum dikirim ke toko."
+            );
+
+            return false;
+        }
+
+        calculateTotal();
+    </script>
+
+</body>
+</html>
