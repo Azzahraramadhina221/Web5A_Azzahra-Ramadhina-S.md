@@ -1,0 +1,694 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #5c4b4f;
+
+    /* Wallpaper dari gambar referensi */
+    background-image: url("my-images2/background-pink.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-image: url("my-images2/background-header.gif");
+
+    border-bottom:
+        4px dotted #a77f82;
+}
+
+
+.header h1 {
+
+    margin: 10px 0;
+
+    color: #805a65;
+
+    font-size: 42px;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        2px 2px 0 #f5cbd0;
+}
+
+
+.header p {
+
+    font-size: 18px;
+
+    color: #80666b;
+
+}
+
+
+.tagline {
+
+    color: #9a666e !important;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    backdrop-filter:
+        blur(8px);
+
+    box-shadow:
+        0 4px 15px
+        rgba(125, 89, 95, 0.18);
+
+}
+
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: #684e53;
+
+    font-weight: bold;
+
+    padding:
+        9px 18px;
+
+    border-radius: 20px;
+
+    background:
+        #f5dfe0;
+
+    border:
+        1px solid #c39da2;
+
+    transition: 0.3s;
+
+}
+
+
+.navbar a:hover {
+
+    background:
+        #b88d92;
+
+    color: white;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =================================
+   MAIN
+================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin:
+        30px auto;
+
+}
+
+/* =================================
+   PANEL / SECTION
+================================= */
+
+.panel {
+
+    margin-bottom: 25px;
+
+    padding: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border:
+        2px solid #c9abad;
+
+    border-radius: 15px;
+
+    box-shadow:
+        4px 5px 0
+        rgba(125, 89, 95, 0.12);
+
+}
+
+.panel h2 {
+
+    color: #976a75;
+
+    text-align: center;
+
+    margin-top: 0;
+
+}
+
+.panel h3 {
+
+    color: #82606a;
+
+}
+
+/* =================================
+   INTRO / HIGHLIGHT
+================================= */
+
+.highlight {
+
+    display: inline;
+
+    background:
+        #f9dfe3;
+
+    padding:
+        2px 6px;
+
+    border-radius: 5px;
+
+    color: #945a69;
+
+    font-weight: bold;
+
+}
+
+/* =================================
+   BLOCKQUOTE
+================================= */
+
+blockquote {
+
+    margin:
+        20px 0 0;
+
+    padding:
+        12px 18px;
+
+    background:
+        #fff0f1;
+
+    border-left:
+        4px solid #bb8b95;
+
+    border-radius:
+        0 8px 8px 0;
+
+    color: #80666b;
+
+    font-style: italic;
+
+}
+
+/* =================================
+   PRODUCT GRID
+================================= */
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* =================================
+   PRODUCT CARD
+================================= */
+
+.product-card img {
+    width: 120%;
+    height: 300px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background: #fffafa;
+
+    border: 2px dashed #bd989c;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(125, 89, 95, 0.12);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.product-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(125, 89, 95, 0.2);
+
+}
+
+/* =================================
+   PRODUCT IMAGE
+================================= */
+
+.product-image {
+
+    width: 200px;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin:
+        0 auto 15px;
+
+    padding: 8px;
+
+    background:
+        #e0f1ed;
+
+    border-radius: 10px;
+
+}
+
+.product-card h3 {
+
+    color: #825d67;
+
+    margin:
+        10px 0;
+
+}
+
+.product-card p {
+
+    line-height: 1.6;
+
+}
+
+
+/* =================================
+   PRICE
+================================= */
+
+.price {
+
+    font-size: 20px;
+
+    color: #a14d67;
+
+    font-weight: bold;
+
+}
+
+/* =================================
+   BUTTON
+================================= */
+
+button {
+
+    border: none;
+
+    padding:
+        12px 20px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            #945a69,
+            #d8bfc2
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    transform:
+        scale(1.05);
+
+    box-shadow:
+        0 5px 15px
+        #ad7782(0, 120, 200, 0.4);
+}
+
+        /* =================================
+   LIST
+================================= */
+
+.category-list,
+.order-list {
+
+    background:
+        #fff0f1;
+
+    padding:
+        20px 40px;
+
+    border:
+        1px dashed #c49ba1;
+
+    border-radius: 12px;
+
+    line-height: 2;
+
+}
+
+.category-list li::marker {
+
+    color:
+        #ad7782;
+
+}
+
+.order-list li::marker {
+
+    color:
+        #9b6873;
+
+    font-weight: bold;
+
+}
+
+/* =================================
+   TABLE
+================================= */
+
+.table-wrapper {
+
+    overflow-x: auto;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background:
+        #f5dfe0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+th,
+td {
+
+    border:
+        1px solid #d8bfc2;
+
+    padding:
+        12px;
+
+    text-align: left;
+
+}
+
+th {
+
+    background:
+        #d7eae5;
+
+    color:
+        #594b50;
+
+}
+
+tr:nth-child(even) {
+
+    background:
+        #fff0f0;
+
+}
+
+tr:hover {
+
+    background:
+        #f9e3e5;
+
+}
+
+/* =================================
+   BLOCK & INLINE
+================================= */
+
+.block-example {
+
+    display: block;
+
+    padding: 20px;
+
+    background:
+        #e0f1ed;
+
+    border:
+        2px dashed #8db3aa;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    line-height: 1.6;
+
+}
+
+.inline-example {
+
+    display: inline;
+
+    background:
+        #f9dfe3;
+
+    padding:
+        4px 8px;
+
+    border-radius: 6px;
+
+    color:
+        #945a69;
+
+    font-weight: bold;
+
+}
+
+/* =================================
+   AUDIO
+================================= */
+
+.media {
+
+    text-align: center;
+}
+
+audio {
+
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+form {
+
+    max-width: 700px;
+
+    margin:
+        0 auto;
+
+}
+
+
+form label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #c39da2;
+}
+
+
+form input,
+form select,
+form textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border:
+        2px solid #b7e3f5;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+
+    border-color:
+        #c49ba1;
+
+    box-shadow:
+        0 0 8px
+        #f71598(20, 157, 213, 0.25);
+}
+
+
+form textarea {
+
+    resize: vertical;
+}
+
+
+.submit-button {
+
+    display: block;
+
+    margin:
+        25px auto 0;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    color: #f71598;
+
+    margin-top: 30px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+    section {
+
+        padding: 20px;
+
+    }
+
+    table {
+
+        font-size: 13px;
+
+    }
+
+    th,
+    td {
+
+        padding: 8px;
+
+    }
+
+}
+
+
