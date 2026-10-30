@@ -1,0 +1,826 @@
+/* =================================
+   GENERAL STYLE
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #fff5f8;
+
+    color: #5f4a52;
+
+    line-height: 1.6;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* =================================
+   HEADER
+================================= */
+
+header {
+    background-color: #f8c8d8;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-bottom: 5px solid #e99ab3;
+
+    outline: 3px solid #fce1e9;
+
+    outline-offset: -10px;
+}
+
+.logo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo i {
+    font-size: 40px;
+
+    color: #c96f8c;
+}
+
+.logo h1 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    color: #9d536d;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.tagline {
+    margin-top: 5px;
+
+    color: #795866;
+
+    font-size: 17px;
+
+    font-style: italic;
+}
+
+/* =================================
+   NAVIGATION
+================================= */
+
+nav {
+    background-color: #b97891;
+
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #f8c8d8;
+
+    color: #8f4f67;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background-color: #fde8ef;
+}
+
+.hero-content {
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #fffafb;
+
+    border: 3px solid #e9a9bd;
+
+    border-radius: 20px;
+
+    outline: 5px dashed #f4c3d2;
+
+    outline-offset: 8px;
+
+    box-shadow: 0 8px 15px rgba(193, 116, 143, 0.15);
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    color: #a95773;
+
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 18px;
+
+    color: #725965;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   BUTTON
+================================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #e99ab3;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    border: 2px solid #cf7895;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #c96f8c;
+
+    color: white;
+}
+
+/* =================================
+   ABOUT
+================================= */
+
+.about {
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #efb7c8;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 12px rgba(193, 116, 143, 0.12);
+}
+
+.about h2,
+.products h2,
+.price-section h2,
+.order h2 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    color: #a95773;
+
+    font-size: 30px;
+}
+
+.about h3 {
+    color: #9d5c73;
+
+    border-left: 5px solid #e99ab3;
+
+    padding-left: 10px;
+}
+
+.benefits {
+    list-style-type: none;
+
+    padding-left: 0;
+}
+
+.benefits li {
+    padding: 8px 0;
+
+    border-bottom: 1px dashed #edbfd0;
+}
+
+.benefits i {
+    color: #d47d99;
+
+    margin-right: 10px;
+}
+
+
+/* =================================
+   PRODUCTS
+================================= */
+
+.products {
+    padding: 50px 30px;
+
+    background-color: #f9dce6;
+}
+
+.product-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =================================
+   PRODUCT CARD
+================================= */
+
+.product-card {
+    background-color: #fffafb;
+
+    padding: 15px;
+
+    border: 2px solid #efb6c8;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 10px rgba(193, 116, 143, 0.12);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    outline: 3px solid #e8a1b9;
+
+    outline-offset: 3px;
+}
+
+
+/* =================================
+   PRODUCT IMAGE
+================================= */
+
+.product-card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 2px solid #f0bdcd;
+}
+
+.product-card h3 {
+    font-family: Georgia, serif;
+
+    color: #a95773;
+}
+
+.product-card p {
+    font-size: 14px;
+}
+
+.price {
+    font-size: 18px !important;
+
+    font-weight: bold;
+
+    color: #c46f8c;
+}
+
+/* =================================
+   BUY BUTTON
+================================= */
+
+.buy-button {
+    display: inline-block;
+
+    background-color: #e99ab3;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #b97891;
+
+    color: white;
+}
+
+
+/* =================================
+   PRICE TABLE
+================================= */
+
+.price-section {
+    padding: 50px 20px;
+
+    background-color: #fff5f8;
+}
+
+table {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow: 0 5px 10px rgba(193, 116, 143, 0.10);
+}
+
+th,
+td {
+    border: 1px solid #e7aec1;
+
+    padding: 14px;
+
+    text-align: center;
+}
+
+th {
+    background-color: #d98ca7;
+
+    color: white;
+
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #fce9ef;
+}
+
+tr:hover {
+    background-color: #f7d2df;
+}
+
+
+/* =================================
+   ORDER
+================================= */
+
+.order {
+    max-width: 800px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 2px solid #efb7c8;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 12px rgba(193, 116, 143, 0.10);
+}
+
+.order ol {
+    line-height: 2;
+
+    padding-left: 30px;
+}
+
+.order li::marker {
+    color: #d47d99;
+
+    font-weight: bold;
+}
+
+.social-link {
+    display: block;
+
+    width: fit-content;
+
+    margin: 25px auto 0;
+
+    color: #c46f8c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-bottom: 2px dotted #c46f8c;
+
+    padding-bottom: 3px;
+
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: #a95773;
+
+    border-bottom-style: solid;
+}
+
+/* ==============================
+   SNAIL PARADISE - ORDER FORM
+   ============================== */
+
+/* Variabel warna */
+:root {
+    --snail-pink: #f4a7c5;
+    --snail-dark-pink: #d96b9b;
+    --snail-light-pink: #fff0f6;
+    --snail-purple: #b8a1e3;
+    --snail-cream: #fffaf0;
+    --snail-brown: #70545c;
+    --snail-white: #ffffff;
+    --snail-border: #f0d3df;
+    --snail-shadow: rgba(160, 91, 125, 0.12);
+}
+
+/* Bagian utama form */
+.order-section {
+    width: min(90%, 720px);
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(
+        145deg,
+        var(--snail-white),
+        var(--snail-light-pink),
+        var(--snail-cream)
+    );
+    border: 2px solid var(--snail-border);
+    border-radius: 28px;
+    box-shadow: 0 12px 35px var(--snail-shadow);
+    box-sizing: border-box;
+}
+
+/* Judul */
+.order-section h2 {
+    margin: 0 0 15px;
+    color: var(--snail-dark-pink);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Deskripsi */
+.form-intro {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    color: var(--snail-brown);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 0.98rem;
+}
+
+/* Susunan form */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Kelompok input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Label */
+.form-group label {
+    color: var(--snail-brown);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+/* Input, dropdown, dan textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid var(--snail-border);
+    border-radius: 12px;
+    background-color: var(--snail-white);
+    color: var(--snail-brown);
+    font: inherit;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+/* Placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b9a3ad;
+}
+
+/* Efek saat input dipilih */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--snail-dark-pink);
+    background-color: #fffafd;
+    box-shadow: 0 0 0 4px rgba(244, 167, 197, 0.2);
+}
+
+/* Area catatan */
+.form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* Dropdown */
+.form-group select {
+    cursor: pointer;
+}
+
+/* Jumlah pesanan */
+.form-group input[type="number"] {
+    max-width: 180px;
+}
+
+/* Estimasi total */
+.order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 5px;
+    padding: 20px;
+    border: 1.5px dashed var(--snail-dark-pink);
+    border-radius: 16px;
+    background-color: var(--snail-white);
+    color: var(--snail-brown);
+}
+
+.order-total span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.order-total strong {
+    color: var(--snail-dark-pink);
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+}
+
+/* Tombol pesan */
+.order-button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        var(--snail-pink),
+        var(--snail-dark-pink)
+    );
+    color: var(--snail-white);
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(217, 107, 155, 0.25);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+/* Hover tombol */
+.order-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px rgba(217, 107, 155, 0.3);
+    filter: brightness(1.04);
+}
+
+/* Saat tombol ditekan */
+.order-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(217, 107, 155, 0.2);
+}
+
+/* Fokus keyboard pada tombol */
+.order-button:focus-visible {
+    outline: 3px solid var(--snail-purple);
+    outline-offset: 4px;
+}
+
+/* Catatan simulasi */
+.form-note {
+    margin: 0;
+    color: #927984;
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 1.7;
+}
+
+/* ==============================
+   RESPONSIVE - TABLET & HP
+   ============================== */
+
+@media (max-width: 600px) {
+    .order-section {
+        width: 94%;
+        margin: 30px auto;
+        padding: 24px 18px;
+        border-radius: 22px;
+    }
+
+    .order-section h2 {
+        font-size: 1.45rem;
+    }
+
+    .form-intro {
+        font-size: 0.9rem;
+        margin-bottom: 22px;
+    }
+
+    .order-form {
+        gap: 17px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .order-total {
+        padding: 16px;
+    }
+
+    .order-total strong {
+        font-size: 1.2rem;
+    }
+
+    .order-button {
+        padding: 14px;
+    }
+}
+
+/* Mengurangi animasi bagi pengguna
+   yang memilih gerakan minimal */
+@media (prefers-reduced-motion: reduce) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea,
+    .order-button {
+        transition: none;
+    }
+
+    .order-button:hover {
+        transform: none;
+    }
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #b97891;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 5px solid #e99ab3;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .product-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    table { 
+        width: 100%;
+
+        font-size: 13px;
+    }
+    
